@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Lato', sans-serif;
+    
+    height: 100%;
+}
+
+/* Navbar Section */
+
+.navbar__section{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #3A3A3A;
+}
+
+.nav__menus{
+    display: flex;
+    gap: 20px;
+}
+
+.nav__menus ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav__menus ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3A3A3A;
+}
+
+.cart__icons i{
+    margin-left: 20px;
+}
+
+
+/* Hero Section */
+
+.hero__section{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #3A3A3A;
+}
+
+.hero__desc{
+    margin-top: 100px;
+    
+}
+
+.hero__desc h1{
+    font-size: 54px;
+    font-weight:900;
+}
+
+.hero__desc p{
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+    width: 70%;
+}
+
+.hero__desc button{
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d6336c;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.hero__img{
+    background-image: url(asset/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px;
+}
+
+
+/* Company Section */
+
+.company__section{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.companies{
+    text-align: center;
+    padding: 30px 0;
+}
+
+hr{
+    border-color: #fff;
+}
+.companies img{
+    margin-left: 30px;
+}
+
+
+/* Collection Section */
+
+.collection__section{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.collection__section h1{
+    text-align: center;
+    padding-bottom: 50px;
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+/* Card Section */
+
+.card__area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.card{
+    padding: 25px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.card h2,h3{
+    padding: 10px 0;
+    color: #3A3A3A;
+}
+
+.card i{
+    color: #FB8405;
+}
+
+.card p,span{
+    color: #787885;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.see__more{
+    text-decoration: none;
+    font-weight: bold;
+    color: #d6336c;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Featured Section */
+
+.featured__section{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.featured__desc h1{
+    font-size: 34px;
+    color: #0A0826;
+    font-weight:900;
+}
+
+.featured__desc p{
+    padding: 20px 0;
+    font-weight: bold;
+    color: #787885;
+}
+
+.featured__desc button{
+    padding: 15px 40px;
+    border: none;
+    background-color: #d6336c;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Footer Section */
+
+.footer{
+    background-color: #0A0826;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.footer p{
+    font-size: 12px;
+}
+
+.footer__icons i{
+    margin-left: 10px;
+    background-color: #22203B;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+/* Responsiveness*/
+
+
+
+
+
+/* For Tablet */
+
+@media screen and (max-width:992px) {
+
+    .navbar__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hero__desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        text-align: center;
+        gap: 10px;
+    }
+
+
+    .card__area{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+  
+
+    .see__more{
+        position: absolute;
+        right: 15%;
+        top: 580%;
+        font-size: 24px;
+    }
+
+    .featured__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .featured__desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .featured__desc p{
+        text-align: center;
+        padding: 0 50px;
+    }
+
+}
+
+
+/* For Mobile */
+
+@media screen and (max-width:600px) {
+
+    
+    
+    .navbar__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hero__desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .card__area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .see__more{
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        
+    }
+
+    .featured__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .featured__desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .featured__desc p{
+        text-align: center;
+        padding: 0 30px;
+    }
+    .featured__desc h1{
+        
+        padding: 0 40px;
+    }
+        
+}
+
